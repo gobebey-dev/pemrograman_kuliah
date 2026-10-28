@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <style>
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(190, 185, 38);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            font-family: "Black Ops One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        th {
+            background-color: rgb(13, 86, 68);
+            color:rgb(0, 0, 0);
+            border: 1px solid rgb(0, 0, 0);
+        }
+        table {
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        tbody tr {
+            cursor: pointer;
+        }
+        tbody tr:hover {
+            background-color: #a1ffce;
+            color: rgb(0, 0, 0);
+            
+        }
+        tr:nth-child(odd) {
+            background-color: #e7e7e7;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 1px 2px rgb(0, 0, 0);
+        }
+        tfoot tr:hover {
+            background-color: #d47f8b;
+            color:rgb(0, 0, 0);
+        }
+        .panji{
+            overflow-x: auto;
+        }
+
+    </style>
+       
+</head>
+<body>
+    <div class="panji">
+    <table border="1">
+        <caption>daftar mahasiswa</caption>
+        <thead>
+            <tr>
+<th rowspan="2">NO</th>
+<th rowspan="2">NIM</th>
+<th colspan="2">MAHASISWA</th>
+
+            </tr>
+            <tr>
+<th>NAMA</th>
+<th>PRODI</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2402011023</td>
+                <td>panji masamudra</td>
+                <td>teknik informatika</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2402011010</td>
+                <td>bagus poke</td>
+                <td>bidan</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">jumlah</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+        <button>submit</button>
+    </table>
+    </div>
+</body>
+</html>
